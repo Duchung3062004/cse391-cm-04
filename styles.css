@@ -1,0 +1,152 @@
+/* Box-sizing Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Design Tokens & Root Styles */
+:root {
+  --cm-primary: #0f766e;
+  --cm-bg: #f8fafc;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: var(--cm-bg);
+  color: #1f2937;
+  line-height: 1.5;
+}
+
+/* Header & Flex Navigation Styles */
+.cm-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--cm-primary);
+  color: #ffffff;
+  padding: 1rem;
+}
+
+.cm-header h1 {
+  margin: 0;
+}
+
+.cm-nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cm-nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.cm-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Grid Layout & Cards */
+.cm-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cm-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 1rem;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.cm-card:hover {
+  border-color: var(--cm-primary);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.cm-card figure {
+  margin: 0 0 0.5rem 0;
+  text-align: center;
+}
+
+.cm-card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem 0;
+}
+
+.cm-card-category {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin: 0 0 0.5rem 0;
+}
+
+.cm-card-price {
+  font-weight: 700;
+  color: var(--cm-primary);
+  margin: auto 0 0 0;
+}
+
+/* Form Controls & Focus States */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  max-width: 24rem;
+  padding: 0.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid var(--cm-primary);
+  outline-offset: 1px;
+}
+
+button[type="submit"] {
+  background-color: var(--cm-primary);
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+button[type="submit"]:hover {
+  background-color: #115e59;
+}
+
+/* General Layout & Spacing */
+main {
+  padding: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #e2e8f0;
+  color: #475569;
+}

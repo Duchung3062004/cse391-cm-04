@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusMart — Layout (Buoi 4)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="cm-header">
+
+        <h1 data-testid="cm-brand">
+            CampusMart
+        </h1>
+
+        <nav class="cm-nav" data-testid="cm-nav">
+
+            <ul>
+
+                <li>
+                    <a href="#categories">Trang chu</a>
+                </li>
+
+                <li>
+                    <a href="#products">San pham</a>
+                </li>
+
+                <li>
+                    <a href="#about">Gioi thieu</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- DANH MUC -->
+        <section id="categories">
+
+            <h2>Danh muc</h2>
+
+            <ul data-testid="cm-category-list">
+
+                <li>Ban phim</li>
+                <li>Chuot</li>
+                <li>Man hinh</li>
+
+            </ul>
+
+        </section>
+
+        <!-- SAN PHAM (GRID & CARDS) -->
+        <section id="products">
+
+            <h2>San pham</h2>
+
+            <div class="cm-grid" data-testid="cm-product-table">
+
+                <!-- Card 1: KB-01 -->
+                <article class="cm-card" data-sku="KB-01">
+                    <figure>
+                        <img src="https://placehold.co/120x80" alt="Ban phim Keychron K2" width="120" height="80">
+                        <figcaption>KB-01</figcaption>
+                    </figure>
+                    <h3 class="cm-card-title">Keychron K2</h3>
+                    <p class="cm-card-category">Ban phim</p>
+                    <p class="cm-card-price">1 890 000 d</p>
+                </article>
+
+                <!-- Card 2: KB-02 -->
+                <article class="cm-card" data-sku="KB-02">
+                    <figure>
+                        <img src="https://placehold.co/120x80" alt="Ban phim Akko 3087" width="120" height="80">
+                        <figcaption>KB-02</figcaption>
+                    </figure>
+                    <h3 class="cm-card-title">Akko 3087</h3>
+                    <p class="cm-card-category">Ban phim</p>
+                    <p class="cm-card-price">1 290 000 d</p>
+                </article>
+
+                <!-- Card 3: KB-03 -->
+                <article class="cm-card" data-sku="KB-03">
+                    <figure>
+                        <img src="https://placehold.co/120x80" alt="Ban phim Leopold FC660M" width="120" height="80">
+                        <figcaption>KB-03</figcaption>
+                    </figure>
+                    <h3 class="cm-card-title">Leopold FC660M</h3>
+                    <p class="cm-card-category">Ban phim</p>
+                    <p class="cm-card-price">2 750 000 d</p>
+                </article>
+
+                <!-- Card 4: MS-01 -->
+                <article class="cm-card" data-sku="MS-01">
+                    <figure>
+                        <img src="https://placehold.co/120x80" alt="Chuot Logitech M331" width="120" height="80">
+                        <figcaption>MS-01</figcaption>
+                    </figure>
+                    <h3 class="cm-card-title">Logitech M331</h3>
+                    <p class="cm-card-category">Chuot</p>
+                    <p class="cm-card-price">290 000 d</p>
+                </article>
+
+                <!-- Card 5: MS-02 -->
+                <article class="cm-card" data-sku="MS-02">
+                    <figure>
+                        <img src="https://placehold.co/120x80" alt="Chuot gaming Razer Viper" width="120" height="80">
+                        <figcaption>MS-02</figcaption>
+                    </figure>
+                    <h3 class="cm-card-title">Razer Viper</h3>
+                    <p class="cm-card-category">Chuot</p>
+                    <p class="cm-card-price">990 000 d</p>
+                </article>
+
+                <!-- Card 6: MS-03 -->
+                <article class="cm-card" data-sku="MS-03">
+                    <figure>
+                        <img src="https://placehold.co/120x80" alt="Chuot Xiaomi Silent" width="120" height="80">
+                        <figcaption>MS-03</figcaption>
+                    </figure>
+                    <h3 class="cm-card-title">Xiaomi Silent</h3>
+                    <p class="cm-card-category">Chuot</p>
+                    <p class="cm-card-price">250 000 d</p>
+                </article>
+
+                <!-- Card 7: MN-01 -->
+                <article class="cm-card" data-sku="MN-01">
+                    <figure>
+                        <img src="https://placehold.co/120x80" alt="Man hinh Dell 24 inch" width="120" height="80">
+                        <figcaption>MN-01</figcaption>
+                    </figure>
+                    <h3 class="cm-card-title">Dell 24 inch</h3>
+                    <p class="cm-card-category">Man hinh</p>
+                    <p class="cm-card-price">3 200 000 d</p>
+                </article>
+
+                <!-- Card 8: MN-02 -->
+                <article class="cm-card" data-sku="MN-02">
+                    <figure>
+                        <img src="https://placehold.co/120x80" alt="Man hinh LG UltraFine" width="120" height="80">
+                        <figcaption>MN-02</figcaption>
+                    </figure>
+                    <h3 class="cm-card-title">LG UltraFine</h3>
+                    <p class="cm-card-category">Man hinh</p>
+                    <p class="cm-card-price">8 500 000 d</p>
+                </article>
+
+            </div>
+
+            <p>
+                So san pham = 8
+            </p>
+
+            <p data-testid="cm-inventory-total">
+                Tong gia tri kho = 41380000
+            </p>
+
+        </section>
+
+        <!-- GIOI THIEU -->
+        <section id="about">
+
+            <h2>Gioi thieu</h2>
+
+            <p>
+                Catalog thiet bi cong nghe danh cho sinh vien.
+            </p>
+
+            <form>
+
+                <p>
+                    <label for="contact-name">
+                        Ho ten
+                    </label>
+
+                    <input
+                        type="text"
+                        id="contact-name"
+                        name="contact_name">
+                </p>
+
+                <p>
+                    <label for="message">
+                        Noi dung
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="4"
+                        required></textarea>
+                </p>
+
+                <button type="submit">
+                    Gui
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- DANG KY NHAN TIN -->
+        <section id="subscribe">
+
+            <h2>
+                Dang ky nhan tin
+            </h2>
+
+            <form data-testid="cm-subscribe-form">
+
+                <fieldset>
+
+                    <legend>
+                        Dang ky nhan tin
+                    </legend>
+
+                    <p>
+
+                        <label for="name">
+                            Ho ten
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            required
+                            minlength="2">
+
+                    </p>
+
+                    <p>
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required>
+
+                    </p>
+
+                    <p>
+
+                        <label for="category">
+                            Danh muc quan tam
+                        </label>
+
+                        <select
+                            id="category"
+                            name="category_id"
+                            required>
+
+                            <option value="">
+                                -- Chon danh muc --
+                            </option>
+
+                            <option value="1">
+                                Ban phim
+                            </option>
+
+                            <option value="2">
+                                Chuot
+                            </option>
+
+                            <option value="3">
+                                Man hinh
+                            </option>
+
+                        </select>
+
+                    </p>
+
+                    <button type="submit">
+                        Dang ky
+                    </button>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            CSE391 — CampusMart UI
+        </p>
+
+    </footer>
+
+    <!-- CM_EXPECT product_count=8 card_count=8 inventory_value=41380000 layout=flex-grid -->
+
+</body>
+
+</html>
